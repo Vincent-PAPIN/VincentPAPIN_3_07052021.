@@ -183,6 +183,52 @@ h5{
     font-weight: bold;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    
+    /* width: 100%; */
+    background: #353535;
+    /* color: white; */
+    padding: 15px;
+    /* height: auto; */
+}
+
+#logo_footer img{
+    filter: invert(1);
+    padding-left: 30px;
+    /* color: white; */
+    width: 150px;
+}
+
+ul li{
+    list-style: none;
+    /* font-family: 'Roboto', sans-serif; */
+    /* margin-bottom: auto; */
+    padding: 5px 0px 10px 0px
+    
+}
+
+/* .footer_icon .fa-utensils{
+    margin-right: 10px;
+} */
+
+/* #info{
+   font-family: 'Roboto', sans-serif;
+} */
+
+footer a{
+    /* font-family: 'Roboto', sans-serif; */
+    text-decoration: none;
+    color: #fff;
+}
+
+/* .footer_icon{
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+} */
+
+
 
 
 
