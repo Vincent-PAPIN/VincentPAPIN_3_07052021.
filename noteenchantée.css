@@ -102,54 +102,234 @@ h2{
 
 h3{
     
-    padding-top: 15px;
+    font-size: 15px;
 }
 
 h4{
     
     margin: -10px 0px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     
 }
 
 .menu_card_entrées{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 10px 40px;
     border-radius: 20px;
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     /* padding-bottom: 20px; */
     background: #fff;
     width: 80%;
     height: 75px;
     box-shadow: 0 5px 15px 0 #c3c3c3;
-}
-
-.menu_card_plats{
-    margin: 10px 40px;
-    border-radius: 20px;
-    padding: 0px 10px;
-    /* padding-bottom: 20px; */
-    background: #fff;
-    width: 80%;
-    height: 75px;
-    box-shadow: 0 5px 15px 0 #c3c3c3;
-}
-
-.menu_card_desserts{
-    margin: 10px 40px;
-    border-radius: 20px;
-    padding: 0px 10px;
-    /* padding-bottom: 20px; */
-    background: #fff;
-    width: 80%;
-    height: 75px;
-    box-shadow: 0 5px 15px 0 #c3c3c3;
-}
-
-#prix_card{
-    text-align: end;
-    margin: -20px 10px;
+    cursor: pointer;
+    overflow: hidden;
     
 }
+
+.prix_card_entrées span{
+    display: inline;
+    float: right;
+    align-items: center;
+    /* justify-self: flex-end; */
+    width: 5%;
+    font-weight: 900;
+    margin: 0 0 0 200px;
+    /* text-align: end;
+    margin: -20px 0px; */
+    
+}
+
+.texte_entrées{
+    padding: 0px 10px;
+}
+
+.menu_card_entrées .select_card {
+	width: 70px;
+	background-color: #8FDEC9;
+	border-radius: 0 15px 15px 0;
+	transform: translateX(70px);
+	
+	transition: all ease 0.4s;
+}
+
+.menu_card_entrées:hover .select_card {
+	transform: translateX(0);
+}
+
+.menu_card_entrées .select_card i {
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+	
+	position: relative;
+	top: calc(50% - 10px);
+	
+	color: #8FDEC9;
+	background-color: #FFF;
+	border-radius: 50%;
+	transition: all ease 0.6s;
+}
+
+.menu_card_entrées:hover .select_card i {
+	transform: rotate(360deg);
+}
+
+
+.menu_card_plats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 40px;
+    border-radius: 20px;
+    /* padding: 0px 10px; */
+    /* padding-bottom: 20px; */
+    background: #fff;
+    width: 80%;
+    height: 75px;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.prix_card_plats span{
+    display: inline;
+    float: right;
+    align-items: center;
+    /* justify-self: flex-end; */
+    width: 5%;
+    font-weight: 900;
+    margin: 0 0 0 200px;
+    /* text-align: end;
+    margin: -20px 0px; */
+    
+}
+
+.texte_plats{
+    padding: 0px 10px;
+}
+.menu_card_plats .select_card {
+        width: 70px;
+        background-color: #8FDEC9;
+        border-radius: 0 15px 15px 0;
+        transform: translateX(70px);
+        
+        transition: all ease 0.4s;
+    }
+    
+    .menu_card_plats:hover .select_card {
+        transform: translateX(0);
+    }
+    
+    .menu_card_plats .select_card i {
+        display: block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+        
+        position: relative;
+        top: calc(50% - 10px);
+        
+        color: #8FDEC9;
+        background-color: #FFF;
+        border-radius: 50%;
+        transition: all ease 0.6s;
+    }
+    
+    .menu_card_plats:hover .select_card i {
+        transform: rotate(360deg);
+    }
+
+
+    /* margin: 10px 40px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    padding-bottom: 20px;
+    background: #fff;
+    width: 80%;
+    height: 75px;
+    box-shadow: 0 5px 15px 0 #c3c3c3; */
+
+
+    .menu_card_desserts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 40px;
+        border-radius: 20px;
+        /* padding: 0px 10px; */
+        /* padding-bottom: 20px; */
+        background: #fff;
+        width: 80%;
+        height: 75px;
+        box-shadow: 0 5px 15px 0 #c3c3c3;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .prix_card_desserts span{
+        display: inline;
+        float: right;
+        align-items: center;
+        /* justify-self: flex-end; */
+        width: 5%;
+        font-weight: 900;
+        margin: 0 0 0 200px;
+        /* text-align: end;
+        margin: -20px 0px; */
+        
+    }
+    
+    .texte_desserts{
+        padding: 0px 10px;
+    }
+
+    .menu_card_desserts .select_card {
+            width: 70px;
+            background-color: #8FDEC9;
+            border-radius: 0 15px 15px 0;
+            transform: translateX(70px);
+            
+            transition: all ease 0.4s;
+        }
+        
+        .menu_card_desserts:hover .select_card {
+            transform: translateX(0);
+        }
+        
+        .menu_card_desserts .select_card i {
+            display: block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            
+            margin: 0 auto;
+            padding: 5px;
+            text-align: center;
+            
+            position: relative;
+            top: calc(50% - 10px);
+            
+            color: #8FDEC9;
+            background-color: #FFF;
+            border-radius: 50%;
+            transition: all ease 0.6s;
+        }
+        
+        .menu_card_desserts:hover .select_card i {
+            transform: rotate(360deg);
+        }
 
 #button_main_card .button{
     display: flex;
