@@ -1,4 +1,5 @@
 body{
+    padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -116,12 +117,11 @@ h4{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 40px;
+    margin: 10px 20px;
     border-radius: 20px;
     /* padding: 0px 10px; */
     /* padding-bottom: 20px; */
     background: #fff;
-    width: 80%;
     height: 75px;
     box-shadow: 0 5px 15px 0 #c3c3c3;
     cursor: pointer;
@@ -129,17 +129,19 @@ h4{
     
 }
 
-.prix_card_entrées span{
-    display: inline;
-    float: right;
+.prix_card_entrées{
+    transition: transform 400ms ease-in-out;
+    transform: translateX(3.5em);
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    /* justify-self: flex-end; */
-    width: 5%;
-    font-weight: 900;
-    margin: 0 0 0 200px;
-    /* text-align: end;
-    margin: -20px 0px; */
+    padding-bottom: 1em;
+    font-weight: bold;
     
+}
+
+.menu_card_entrées:hover .prix_card_entrées{
+    transform: translateX(0);
 }
 
 .texte_entrées{
@@ -187,29 +189,30 @@ h4{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 40px;
+    margin: 10px 20px;
     border-radius: 20px;
     /* padding: 0px 10px; */
     /* padding-bottom: 20px; */
     background: #fff;
-    width: 80%;
     height: 75px;
     box-shadow: 0 5px 15px 0 #c3c3c3;
     cursor: pointer;
     overflow: hidden;
 }
 
-.prix_card_plats span{
-    display: inline;
-    float: right;
+.prix_card_plats{
+    transition: transform 400ms ease-in-out;
+    transform: translateX(3.5em);
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    /* justify-self: flex-end; */
-    width: 5%;
-    font-weight: 900;
-    margin: 0 0 0 200px;
-    /* text-align: end;
-    margin: -20px 0px; */
+    padding-bottom: 1em;
+    font-weight: bold;
     
+}
+
+.menu_card_plats:hover .prix_card_plats{
+    transform: translateX(0);
 }
 
 .texte_plats{
@@ -252,44 +255,36 @@ h4{
     }
 
 
-    /* margin: 10px 40px;
-    border-radius: 20px;
-    padding: 0px 10px;
-    padding-bottom: 20px;
-    background: #fff;
-    width: 80%;
-    height: 75px;
-    box-shadow: 0 5px 15px 0 #c3c3c3; */
-
-
     .menu_card_desserts{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 10px 40px;
+        margin: 10px 20px;
         border-radius: 20px;
         /* padding: 0px 10px; */
         /* padding-bottom: 20px; */
         background: #fff;
-        width: 80%;
         height: 75px;
         box-shadow: 0 5px 15px 0 #c3c3c3;
         cursor: pointer;
         overflow: hidden;
     }
 
-    .prix_card_desserts span{
-        display: inline;
-        float: right;
-        align-items: center;
-        /* justify-self: flex-end; */
-        width: 5%;
-        font-weight: 900;
-        margin: 0 0 0 200px;
-        /* text-align: end;
-        margin: -20px 0px; */
+    .prix_card_desserts{
+    transition: transform 400ms ease-in-out;
+    transform: translateX(3.5em);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1em;
+    font-weight: bold;
         
     }
+
+    .menu_card_desserts:hover .prix_card_desserts{
+        transform: translateX(0);
+    }
+
     
     .texte_desserts{
         padding: 0px 10px;
@@ -385,4 +380,20 @@ footer a{
     /* font-family: 'Roboto', sans-serif; */
     text-decoration: none;
     color: #fff;
+}
+
+#menu{
+    margin-bottom: 3em;
+    animation: menu_card_entrées 800ms ease-in-out both;
+}
+
+@keyframes menu_card_entrées{
+    0%{
+        opacity: 0;
+        transform: translateY(5em);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0em);
+    }
 }
