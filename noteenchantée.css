@@ -185,6 +185,69 @@ h4{
 }
 
 
+
+
+.menu_card_entrées_4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 20px;
+    border-radius: 20px;
+    /* padding: 0px 10px; */
+    /* padding-bottom: 20px; */
+    background: #fff;
+    height: 75px;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.menu_card_entrées_4:hover .prix_card_entrées{
+    transform: translateX(0);
+}
+
+.texte_entrées{
+    padding: 0px 10px;
+}
+
+.menu_card_entrées_4 .select_card {
+	width: 70px;
+	background-color: #8FDEC9;
+	border-radius: 0 15px 15px 0;
+	transform: translateX(70px);
+	
+	transition: all ease 0.4s;
+}
+
+.menu_card_entrées_4:hover .select_card {
+	transform: translateX(0);
+}
+
+.menu_card_entrées_4 .select_card i {
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+	
+	position: relative;
+	top: calc(50% - 10px);
+	
+	color: #8FDEC9;
+	background-color: #FFF;
+	border-radius: 50%;
+	transition: all ease 0.6s;
+}
+
+.menu_card_entrées_4:hover .select_card i {
+	transform: rotate(360deg);
+}
+
+
 .menu_card_plats{
     display: flex;
     flex-direction: row;
@@ -253,6 +316,75 @@ h4{
     .menu_card_plats:hover .select_card i {
         transform: rotate(360deg);
     }
+
+
+
+    .menu_card_plats_3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 20px;
+        border-radius: 20px;
+        background: #fff;
+        height: 75px;
+        box-shadow: 0 5px 15px 0 #c3c3c3;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    .prix_card_plats{
+        transition: transform 400ms ease-in-out;
+        transform: translateX(3.5em);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 1em;
+        font-weight: bold;
+        
+    }
+    
+    .menu_card_plats_3:hover .prix_card_plats{
+        transform: translateX(0);
+    }
+    
+    .texte_plats{
+        padding: 0px 10px;
+    }
+    .menu_card_plats_3 .select_card {
+            width: 70px;
+            background-color: #8FDEC9;
+            border-radius: 0 15px 15px 0;
+            transform: translateX(70px);
+            
+            transition: all ease 0.4s;
+        }
+        
+        .menu_card_plats_3:hover .select_card {
+            transform: translateX(0);
+        }
+        
+        .menu_card_plats_3 .select_card i {
+            display: block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            
+            margin: 0 auto;
+            padding: 5px;
+            text-align: center;
+            
+            position: relative;
+            top: calc(50% - 10px);
+            
+            color: #8FDEC9;
+            background-color: #FFF;
+            border-radius: 50%;
+            transition: all ease 0.6s;
+        }
+        
+        .menu_card_plats_3:hover .select_card i {
+            transform: rotate(360deg);
+        }
 
 
     .menu_card_desserts{
@@ -395,5 +527,60 @@ footer a{
     100%{
         opacity: 1;
         transform: translateY(0em);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:2560px ){
+    #big_menu{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu_entrées{
+        width: 100%;
+        padding: 15px 0 15px 15px;
+    }
+
+    #menu_plats{
+        width: 100%;
+        padding: 15px 0 15px 15px;
+    }
+
+    #menu_desserts{
+        width: 100%;
+        padding: 15px 0 15px 15px;
+    }
+
+    .menu_card_entrées{
+        flex: 30%;
+        /* height: 95px; */
+        
+    }
+
+    .menu_card_plats{
+        flex: 30%;
+        /* height: 90px; */
+    }
+
+    .menu_card_desserts{
+        flex: 30%;
+        /* height: 90px; */
+    }
+
+    .menu_card_plats_3{
+        flex: 30%;
+        /* justify-content: center; */
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    .menu_card_entrées_4{
+        
+        width: 30%;
     }
 }

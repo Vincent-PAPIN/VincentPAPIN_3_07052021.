@@ -418,4 +418,43 @@ footer a{
 }
 
 
+@media only screen and (min-width: 768px) and (max-width:2560px ){
+    #big_menu{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 
+    #menu_entrées{
+        width: 100%;
+        padding: 15px 0 15px 15px;
+    }
+
+    #menu_plats{
+        width: 100%;
+        padding: 15px 0 15px 15px;
+    }
+
+    #menu_desserts{
+        width: 100%;
+        padding: 15px 0 15px 15px;
+    }
+
+    .menu_card_entrées{
+        flex: 30%;
+        /* height: 95px; */
+        
+    }
+
+    .menu_card_plats{
+        flex: 30%;
+        /* height: 90px; */
+    }
+
+    .menu_card_desserts{
+        flex: 30%;
+        /* height: 90px; */
+    }
+
+}

@@ -46,7 +46,6 @@ i.fa-map-marker-alt{
     margin: 0 auto;
     text-align: center;
     font-size: 1.8rem;
-    line-height: 1.4rem;
     
 }
 
@@ -319,7 +318,7 @@ footer a{
 
 
 
-@media screen and (min-width: 1024px) and (max-width: 2560px){
+@media only screen and (min-width: 1024px) and (max-width: 2560px){
   .button_function{
     
     width: 250px;
@@ -356,7 +355,7 @@ footer a{
   }
 
   .box{
-    width: 75%;
+    max-width: 75%;
     margin-bottom: 50px;
   }
 
