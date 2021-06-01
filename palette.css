@@ -446,7 +446,7 @@ footer a{
 
 
 @media only screen and (min-width: 768px) and (max-width:2560px ){
-    #big_menu{
+    .big_menu{
         display: flex;
         flex-flow: row wrap;
         align-items: center;
