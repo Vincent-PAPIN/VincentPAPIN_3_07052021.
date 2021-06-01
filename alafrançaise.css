@@ -57,38 +57,29 @@ h1{
 }
 
 #like i{
-    position: absolute;
     color: #9d9d9d;
     font-size: 24px;
-    transition: 0.3s 0s ease-in-out;
-}
-
-#like .hover-icon{
     position: absolute;
-    right: -25px;
+    left: 50%;
+  }
+  
+  #like .hover-icon{
+    left: 50%;
     opacity: 0;
-    
-}
-
-#like .hover-icon:hover {
-    background: linear-gradient(#ff79da, #9356dc);
-    opacity: 1;
-    z-index: 1;
-    
+    position: absolute;
   }
-  #like:hover {
-    cursor: pointer;
-    /* overflow: hidden; */
-    opacity: 1;
-  }
-  #like .default-icon:hover {
+  
+  #like:hover .default-icon{
     opacity: 0;
+    transition: .5s 0s ease;
   }
-
-/* #like .hover-icon:hover{
-    background: linear-gradient(#9356dc, #ff79da);
+  
+  #like:hover .hover-icon{
+    color: #9356dc;
+    opacity: 1;
+    transition: .5s 0s ease;
     z-index: 999;
-} */
+  }
 
 h2{
     margin: 25px 25px;

@@ -58,6 +58,31 @@ h1{
 }
 
 #like i{
+    color: #9d9d9d;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+  }
+  
+  #like .hover-icon{
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+  }
+  
+  #like:hover .default-icon{
+    opacity: 0;
+    transition: .5s 0s ease;
+  }
+  
+  #like:hover .hover-icon{
+    color: #9356dc;
+    opacity: 1;
+    transition: .5s 0s ease;
+    z-index: 999;
+  }
+
+/* #like i{
     position: absolute;
     color: #9d9d9d;
     font-size: 24px;
@@ -79,12 +104,12 @@ h1{
   }
   #like:hover {
     cursor: pointer;
-    /* overflow: hidden; */
+    overflow: hidden;
     opacity: 1;
   }
   #like .default-icon:hover {
     opacity: 0;
-  }
+  } */
 
 /* #like .hover-icon:hover{
     background: linear-gradient(#9356dc, #ff79da);
