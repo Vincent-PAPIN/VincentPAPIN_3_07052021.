@@ -104,16 +104,13 @@ h4{
     
 }
 
-.menu_card_entrées{
+.menu_card_entrees{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 10px 20px;
     border-radius: 20px;
-    /* padding: 0px 10px; */
-    /* padding-bottom: 20px; */
     background: #fff;
-    /* width: 80%; */
     height: 75px;
     box-shadow: 0 5px 15px 0 #c3c3c3;
     cursor: pointer;
@@ -121,7 +118,7 @@ h4{
     
 }
 
-.prix_card_entrées{
+.prix_card_entrees{
     transition: transform 400ms ease-in-out;
     transform: translateX(3.5em);
     display: flex;
@@ -131,11 +128,11 @@ h4{
     font-weight: bold;
     
 }
-.menu_card_entrées:hover .prix_card_entrées{
+.menu_card_entrees:hover .prix_card_entrees{
     transform: translateX(0);
 }
 
-.texte_entrées{
+.texte_entrees{
     padding: 0px 10px;
 }
 
@@ -145,7 +142,7 @@ h4{
     justify-content: flex-end;
 } */
 
-.menu_card_entrées .select_card {
+.menu_card_entrees .select_card {
 	width: 70px;
 	background-color: #8FDEC9;
 	border-radius: 0 15px 15px 0;
@@ -153,11 +150,11 @@ h4{
 	transition: all ease 0.4s;
 }
 
-.menu_card_entrées:hover .select_card {
+.menu_card_entrees:hover .select_card {
 	transform: translateX(0);
 }
 
-.menu_card_entrées .select_card i {
+.menu_card_entrees .select_card i {
 	display: block;
 	width: 20px;
 	height: 20px;
@@ -173,7 +170,7 @@ h4{
 	transition: all ease 0.6s;
 }
 
-.menu_card_entrées:hover .select_card i {
+.menu_card_entrees:hover .select_card i {
 	transform: rotate(360deg);
 }
 
@@ -373,10 +370,10 @@ footer a{
 
 #menu{
     margin-bottom: 3em;
-    animation: menu_card_entrées 800ms ease-in-out both;
+    animation: menu_card_entrees 800ms ease-in-out both;
 }
 
-@keyframes menu_card_entrées{
+@keyframes menu_card_entrees{
     0%{
         opacity: 0;
         transform: translateY(5em);
@@ -395,7 +392,7 @@ footer a{
         justify-content: space-between;
     }
 
-    #menu_entrées{
+    #menu_entrees{
         width: 100%;
         padding: 15px 0 15px 15px;
     }
@@ -410,7 +407,7 @@ footer a{
         padding: 15px 0 15px 15px;
     }
 
-    .menu_card_entrées{
+    .menu_card_entrees{
         flex: 30%;
         /* height: 95px; */
         
