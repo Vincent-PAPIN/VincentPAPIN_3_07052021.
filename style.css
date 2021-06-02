@@ -148,7 +148,8 @@ h3{
 
 .like{
   display: flex;
-  justify-content: flex-end;
+  margin-right: 10px;
+  /* justify-content: flex-end; */
   align-items: center;
 }
 
@@ -303,7 +304,7 @@ footer a{
   .loadspinner .spinner-wrapper .spinner-bar {
    
     animation: spinner 1s infinite;
-    background: #ff79da;
+    /* background: #ff79da; */
     border-radius: 100% 0 0;
     height: 50%;
     left: 0;
