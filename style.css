@@ -148,7 +148,7 @@ h3{
 
 .like{
   display: flex;
-  margin-right: 10px;
+  margin-right: 25px;
   /* justify-content: flex-end; */
   align-items: center;
 }
@@ -256,11 +256,9 @@ footer a{
 }
 
 
-
-
 .loadspinner {
     
-    animation: loadspinner 3s;
+    animation: loadspinner 1s;
     animation-delay: 1s;
     animation-fill-mode: both;
     background-color: rgba(10, 10, 10, 0.6);
@@ -303,7 +301,7 @@ footer a{
   
   .loadspinner .spinner-wrapper .spinner-bar {
    
-    animation: spinner 1s infinite;
+    animation: spinner 3s infinite;
     /* background: #ff79da; */
     border-radius: 100% 0 0;
     height: 50%;
@@ -334,6 +332,7 @@ footer a{
       background: #337DFF;
         transform: rotate(0deg);
     }
+    
     100% {
       background: #337DFF;
     transform: rotate(360deg);
@@ -354,6 +353,14 @@ footer a{
     transform: rotate(360deg);
     }
   } */
+
+
+  @media only screen and (min-width: 500px) and (max-width: 1023px){
+    .info{
+      position: absolute;
+      left: 75%;
+    }
+  }
 
 
 
@@ -400,9 +407,7 @@ footer a{
 
   .info{
     position: absolute;
-    margin-left: 5%;
-  }
+    left: 75%;
 }
 
-
-
+}

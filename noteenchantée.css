@@ -54,7 +54,7 @@ h1{
 #like{
     position: absolute;
     right: 30px;
-    top: 30px;
+    top: 36px;
 }
 
 #like i{
@@ -123,24 +123,26 @@ h4{
 .prix_card_entrees{
     transition: transform 400ms ease-in-out;
     transform: translateX(3.5em);
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; */
+    position: relative;
+    right: 100px;
     padding-bottom: 1em;
     font-weight: bold;
     
 }
 
-.menu_card_entrees:hover .prix_card_entrees{
+/* .menu_card_entrees:hover .prix_card_entrees{
     transform: translateX(0);
-}
+} */
 
 .texte_entrees{
     padding: 0px 10px;
 }
 
 .menu_card_entrees .select_card {
-	width: 70px;
+	width: 60px;
 	background-color: #8FDEC9;
 	border-radius: 0 15px 15px 0;
 	transform: translateX(70px);
@@ -157,16 +159,13 @@ h4{
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
-	
 	margin: 0 auto;
 	padding: 5px;
 	text-align: center;
-	
 	position: relative;
 	top: calc(50% - 10px);
-	
-	color: #8FDEC9;
-	background-color: #FFF;
+	color: white;
+    font-size: 24px;
 	border-radius: 50%;
 	transition: all ease 0.6s;
 }
@@ -192,16 +191,16 @@ h4{
     
 }
 
-.menu_card_entrees_4:hover .prix_card_entrees{
+/* .menu_card_entrees_4:hover .prix_card_entrees{
     transform: translateX(0);
-}
+} */
 
 .texte_entrees{
     padding: 0px 10px;
 }
 
 .menu_card_entrees_4 .select_card {
-	width: 70px;
+	width: 60px;
 	background-color: #8FDEC9;
 	border-radius: 0 15px 15px 0;
 	transform: translateX(70px);
@@ -255,23 +254,25 @@ h4{
 .prix_card_plats{
     transition: transform 400ms ease-in-out;
     transform: translateX(3.5em);
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; */
+    position: relative;
+    right: 100px;
     padding-bottom: 1em;
     font-weight: bold;
     
 }
 
-.menu_card_plats:hover .prix_card_plats{
+/* .menu_card_plats:hover .prix_card_plats{
     transform: translateX(0);
-}
+} */
 
 .texte_plats{
     padding: 0px 10px;
 }
 .menu_card_plats .select_card {
-        width: 70px;
+        width: 60px;
         background-color: #8FDEC9;
         border-radius: 0 15px 15px 0;
         transform: translateX(70px);
@@ -288,16 +289,13 @@ h4{
         width: 20px;
         height: 20px;
         line-height: 20px;
-        
         margin: 0 auto;
         padding: 5px;
         text-align: center;
-        
         position: relative;
         top: calc(50% - 10px);
-        
-        color: #8FDEC9;
-        background-color: #FFF;
+        color: white;
+        font-size: 24px;
         border-radius: 50%;
         transition: all ease 0.6s;
     }
@@ -305,7 +303,6 @@ h4{
     .menu_card_plats:hover .select_card i {
         transform: rotate(360deg);
     }
-
 
 
     .menu_card_plats_3{
@@ -324,23 +321,25 @@ h4{
     .prix_card_plats{
         transition: transform 400ms ease-in-out;
         transform: translateX(3.5em);
-        display: flex;
+        /* display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: center; */
+        position: relative;
+        right: 100px;
         padding-bottom: 1em;
         font-weight: bold;
         
     }
     
-    .menu_card_plats_3:hover .prix_card_plats{
+    /* .menu_card_plats_3:hover .prix_card_plats{
         transform: translateX(0);
-    }
+    } */
     
     .texte_plats{
         padding: 0px 10px;
     }
     .menu_card_plats_3 .select_card {
-            width: 70px;
+            width: 60px;
             background-color: #8FDEC9;
             border-radius: 0 15px 15px 0;
             transform: translateX(70px);
@@ -357,16 +356,13 @@ h4{
             width: 20px;
             height: 20px;
             line-height: 20px;
-            
             margin: 0 auto;
             padding: 5px;
             text-align: center;
-            
             position: relative;
             top: calc(50% - 10px);
-            
-            color: #8FDEC9;
-            background-color: #FFF;
+            color: white;
+            font-size: 24px;
             border-radius: 50%;
             transition: all ease 0.6s;
         }
@@ -394,25 +390,26 @@ h4{
     .prix_card_desserts{
     transition: transform 400ms ease-in-out;
     transform: translateX(3.5em);
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; */
+    position: relative;
+    right: 100px;
     padding-bottom: 1em;
     font-weight: bold;
         
     }
 
-    .menu_card_desserts:hover .prix_card_desserts{
+    /* .menu_card_desserts:hover .prix_card_desserts{
         transform: translateX(0);
-    }
+    } */
 
-    
     .texte_desserts{
         padding: 0px 10px;
     }
 
     .menu_card_desserts .select_card {
-            width: 70px;
+            width: 60px;
             background-color: #8FDEC9;
             border-radius: 0 15px 15px 0;
             transform: translateX(70px);
@@ -429,16 +426,13 @@ h4{
             width: 20px;
             height: 20px;
             line-height: 20px;
-            
             margin: 0 auto;
             padding: 5px;
             text-align: center;
-            
             position: relative;
-            top: calc(50% - 10px);
-            
-            color: #8FDEC9;
-            background-color: #FFF;
+            top: calc(50% - 10px); 
+            color: white;
+            font-size: 24px;
             border-radius: 50%;
             transition: all ease 0.6s;
         }
@@ -496,21 +490,81 @@ footer a{
     color: #fff;
 }
 
-#menu{
-    margin-bottom: 3em;
-    animation: menu_card_entrees 800ms ease-in-out both;
-}
+.menu_card_entrees {
+    opacity: 0;
+    animation: items 2000ms ease-in-out forwards;
+  }
 
-@keyframes menu_card_entrees{
-    0%{
-        opacity: 0;
-        transform: translateY(5em);
+  .menu_card_entrees_4 {
+    opacity: 0;
+    animation: items 2000ms ease-in-out forwards;
+  }
+  .menu_card_entrees:nth-child(1) {
+    animation-delay: 100ms;
+  }
+  .menu_card_entrees:nth-child(2) {
+    animation-delay: 300ms;
+  }
+  .menu_card_entrees:nth-child(3) {
+    animation-delay: 500ms;
+  }
+  .menu_card_entrees:nth-child(4) {
+    animation-delay: 1000ms;
+  }
+  .menu_card_entrees_4:nth-child(5) {
+    animation-delay: 1500ms;
+  }
+
+  .menu_card_plats {
+    opacity: 0;
+    animation: items 2000ms ease-in-out forwards;
+  }
+
+  .menu_card_plats_3 {
+    opacity: 0;
+    animation: items 4000ms ease-in-out forwards;
+  }
+  .menu_card_plats:nth-child(1) {
+    animation-delay: 100ms;
+  }
+  .menu_card_plats:nth-child(2) {
+    animation-delay: 300ms;
+  }
+  .menu_card_plats:nth-child(3) {
+    animation-delay: 500ms;
+  }
+  .menu_card_plats:nth-child(4) {
+    animation-delay: 1000ms;
+  }
+  .menu_card_plats_3:nth-child(5) {
+    animation-delay: 1500ms;
+  }
+
+  .menu_card_desserts {
+    opacity: 0;
+    animation: items 2000ms ease-in-out forwards;
+  }
+  .menu_card_desserts:nth-child(1) {
+    animation-delay: 100ms;
+  }
+  .menu_card_desserts:nth-child(2) {
+    animation-delay: 300ms;
+  }
+  .menu_card_desserts:nth-child(3) {
+    animation-delay: 500ms;
+  }
+  .menu_card_desserts:nth-child(4) {
+    animation-delay: 1000ms;
+  }
+
+  @keyframes items {
+    0% {
+      opacity: 0;
     }
-    100%{
-        opacity: 1;
-        transform: translateY(0em);
+    100% {
+      opacity: 1;
     }
-}
+  }
 
 @media only screen and (min-width: 768px) and (max-width:2560px ){
     .big_menu{
